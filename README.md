@@ -28,7 +28,7 @@ The only thing required to use the directive is the config attribute.
 This is a factory object with all the settings unique to this widget.
 You will define the name of the widget, the events and any options you
 want to use as attributes here:
-`<div jquery-widget config="sliderConfig" ng-model="model.slider"></div>`
+`<div jquery-widget config="sliderConfig" ng-model="model.foo"></div>`
 
 ```javascript
 register a slider module
@@ -81,7 +81,16 @@ this.binds = [
 this.render = function(viewValue, ngModel) {};
 ```
 
-Wiring up a method -
+## Setting 
+
+## Wiring up a method
+A method can be used two ways - with and without a value.
+
+Without a value, it is just a string:
+<button ng-click="model.foo.method='pageUp'">pageUp</button>
+
+With a value, it is an object where the key is the name of the method and the value is the value:
+<button ng-click="model.foo.method={pageUp: 10}">pageUp by 10</button>
 
 ## Browser compatibility
 
