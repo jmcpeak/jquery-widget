@@ -18,6 +18,18 @@ Check [examples](https://github.com/jmcpeak/jquery-widget/blob/master/app/index.
 
 ## Settings in the config factory
 
+        The only thing required to use the directive is the config attribute.
+        This is a factory object with all the settings unique to this widget.
+        You will define the name of the widget, the events and any options you
+        want to use as attributes here
+        <div jquery-widget config="sliderConfig" ng-model="model.slider"></div>
+     
+        register a slider module
+        var app = angular.module('slider', ['jqueryWidget']);
+        
+        register a factory against that module
+        app.factory('sliderConfig', function () {
+        
         // the name of the widget - $('.selector').slider()
         // required
         this.widget = 'slider';
