@@ -18,9 +18,9 @@ The [index.html](https://github.com/jmcpeak/jquery-widget/blob/master/app/index.
 
 ## Features
 
-- Should work with any jQuery Widget written to the jQuery Widget Factory Pattern
+- Should work with any jQuery Widget written to the jQuery Widget [Factory Pattern](http://api.jqueryui.com/jquery.widget/)
 - Written as a single general purpose directive - jqueryWidget.js
-- just need to write and pass in a config factory object
+- Just need to write and pass in a config factory object - see [slider.js](https://github.com/jmcpeak/jquery-widget/blob/master/app/scripts/controllers/slider.js)
 
 ## Settings in the config factory
 
