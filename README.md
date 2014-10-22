@@ -4,7 +4,7 @@ Have you written a jQuery Widget but you don't have time to re-write it in angul
 
 But - *wow* - how much knowledge it takes to *properly* wire up your widget in angular?
 
-How do I wrap it and use it angular?
+How do I wrap it and use it angular? And it must be a two-way binding!
 
 With this directive - it is all in the model.
 
@@ -81,16 +81,39 @@ this.binds = [
 this.render = function(viewValue, ngModel) {};
 ```
 
-## Setting 
+## Options
+The model needs to start life as an object - ng-model="model.foo"
 
-## Wiring up a method
+Then all options will just be available on the model, by name, as two way bindings:
+`<input type="text" ng-model="model.foo.value">`
+
+## Method
 A method can be used two ways - with and without a value.
 
 Without a value, it is just a string:
-<button ng-click="model.foo.method='pageUp'">pageUp</button>
+`<button ng-click="model.foo.method='pageUp'">pageUp</button>`
 
 With a value, it is an object where the key is the name of the method and the value is the value:
-<button ng-click="model.foo.method={pageUp: 10}">pageUp by 10</button>
+`<button ng-click="model.foo.method={pageUp: 10}">pageUp by 10</button>`
+
+## Events
+Defined once in the config object
+
+## Attributes
+
+Don't need any fancy options - just want to make them available as attributes?
+
+Set a list of them in the config object
+```javascript
+this.attributes = ['disabled'];
+```
+And boom - they are just available as bound attributes:
+
+First define the directive
+`<input jquery-widget config="sliderConfig" disabled="{{sDisabled}}" ng-model="model.foo">`
+
+Now just use it
+`<input type="checkbox" value="{{sDisabled}}" ng-click="sDisabled = !sDisabled"/>`
 
 ## Browser compatibility
 
