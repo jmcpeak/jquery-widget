@@ -53,7 +53,7 @@ angular.module('jqueryWidget', []).directive('jqueryWidget', function ($injector
                     var attributeOptions = {};
 
                     // Ensure the convenience attributes are passed as options if they're defined
-                    // This avoids init ordering issues where the slider's initial state (eg handle
+                    // This avoids init ordering issues where the widget's initial state (eg handle
                     // position) is calculated using widget defaults
                     // Note the attributes will take precedence over any duplicates in options
                     angular.forEach(configFactory.attributes, function (attribute) {
@@ -145,7 +145,7 @@ angular.module('jqueryWidget', []).directive('jqueryWidget', function ($injector
                     }
                 }, true);
 
-                // Update slider from model value - this gives us two-way binding
+                // Update widget from model value - this gives us two-way binding
                 ngModel.$render = function () {
                     if (ngModel.$viewValue) {
                         var viewValue = angular.copy(ngModel.$viewValue);
@@ -161,11 +161,6 @@ angular.module('jqueryWidget', []).directive('jqueryWidget', function ($injector
                     }
                 };
             };
-        },
-        controller: function ($scope) {
-            $scope.remove = function (selector) {
-                angular.element(selector).remove();
-            }
         }
     };
 });
