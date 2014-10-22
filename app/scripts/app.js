@@ -8,4 +8,4 @@
  *
  * Main module of the application.
  */
-angular.module('jqueryWrapperApp', ['jqueryWidget', 'main', 'menu', 'progressbar', 'slider', 'spinner']);
+angular.module('jqueryWrapperApp', ['jqueryWidget', 'menu', 'progressbar', 'slider', 'spinner']);
