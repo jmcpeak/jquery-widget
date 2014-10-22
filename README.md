@@ -13,7 +13,6 @@ This Angular directive was written as a wrapper to host **any** Widget written t
 
 - slider [demo](http://jsfiddle.net/jmcpeak/scbu1w9f/)
 - spinner [demo](http://jsfiddle.net/jmcpeak/bqoyL56L/)
-- [multiple widgets](http://jsfiddle.net/jmcpeak/c55rqzcq/)
 
 The [index.html](https://github.com/jmcpeak/jquery-widget/blob/master/app/index.html) file has many good working examples.
 
