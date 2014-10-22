@@ -85,16 +85,22 @@ this.render = function(viewValue, ngModel) {};
 The model needs to start life as an object - ng-model="model.foo"
 
 Then all options will just be available on the model, by name, as two way bindings:
-`<input type="text" ng-model="model.foo.value">`
+```
+<input type="text" ng-model="model.foo.value">
+```
 
 ## Method
 A method can be used two ways - with and without a value.
 
 Without a value, it is just a string:
-`<button ng-click="model.foo.method='pageUp'">pageUp</button>`
+```
+<button ng-click="model.foo.method='pageUp'">pageUp</button>
+```
 
 With a value, it is an object where the key is the name of the method and the value is the value:
-`<button ng-click="model.foo.method={pageUp: 10}">pageUp by 10</button>`
+```
+<button ng-click="model.foo.method={pageUp: 10}">pageUp by 10</button>
+```
 
 ## Events
 Defined once in the config object
@@ -110,10 +116,14 @@ this.attributes = ['disabled'];
 And boom - they are just available as bound attributes:
 
 First define the directive
-`<input jquery-widget config="sliderConfig" disabled="{{sDisabled}}" ng-model="model.foo">`
+```
+<input jquery-widget config="sliderConfig" disabled="{{sDisabled}}" ng-model="model.foo">
+```
 
 Now just use it
-`<input type="checkbox" value="{{sDisabled}}" ng-click="sDisabled = !sDisabled"/>`
+```
+<input type="checkbox" value="{{sDisabled}}" ng-click="sDisabled = !sDisabled"/>
+```
 
 ## Browser compatibility
 
