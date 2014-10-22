@@ -1,12 +1,14 @@
 # jquery-widget
 
-Have you written a jQuery Widget?
+Have you written a jQuery Widget but you don't have time to re-write it in angular?
 
-You don't have time to re-write it in angular?
+But - *wow* - how much knowledge it takes to *properly* wire up your widget in angular?
 
-But - wow - how much knowledge it takes to [i]properly[i] wire up your widget in agular?
+How do I wrap it and use it angular?
 
-This Angular directive was written as a wrapper to host any Widget written to the specs of the
+With this directive - it is all in the model.
+
+This Angular directive was written as a wrapper to host **any** Widget written to the specs of the
 [Widget Factory](http://api.jqueryui.com/jquery.widget/)
 
 - [demo](http://jsfiddle.net/jmcpeak/scbu1w9f/)
@@ -25,7 +27,7 @@ Check [examples](https://github.com/jmcpeak/jquery-widget/blob/master/app/index.
 The only thing required to use the directive is the config attribute.
 This is a factory object with all the settings unique to this widget.
 You will define the name of the widget, the events and any options you
-want to use as attributes here
+want to use as attributes here:
 `<div jquery-widget config="sliderConfig" ng-model="model.slider"></div>`
 
 ```javascript
