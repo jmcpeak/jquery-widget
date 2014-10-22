@@ -2,6 +2,10 @@
 
 Have you written a jQuery Widget?
 
+You don't have time to re-write it in angular?
+
+But - wow - how much knowledge it takes to [i]properly[i] wire up your widget in agular?
+
 This Angular directive was written as a wrapper to host any Widget written to the specs of the
 [Widget Factory](http://api.jqueryui.com/jquery.widget/)
 
@@ -18,6 +22,7 @@ Check [examples](https://github.com/jmcpeak/jquery-widget/blob/master/app/index.
 
 ## Settings in the config factory
 
+```javascript
         The only thing required to use the directive is the config attribute.
         This is a factory object with all the settings unique to this widget.
         You will define the name of the widget, the events and any options you
@@ -72,7 +77,7 @@ Check [examples](https://github.com/jmcpeak/jquery-widget/blob/master/app/index.
         // if you need to change some values before they are put back into the widget - for instance the slider step
         // can't be less than 1 or empty - do that here
         this.render = function(viewValue, ngModel) {};
-
+```
 
 ## Browser compatibility
 
