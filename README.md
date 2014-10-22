@@ -14,7 +14,7 @@ This Angular directive was written as a wrapper to host **any** Widget written t
 - [demo](http://jsfiddle.net/jmcpeak/scbu1w9f/)
 - [multiple widgets](http://jsfiddle.net/jmcpeak/c55rqzcq/)
 
-The [index.html](https://github.com/jmcpeak/jquery-widget/blob/master/app/index.html) file has a many good working examples.
+The [index.html](https://github.com/jmcpeak/jquery-widget/blob/master/app/index.html) file has many good working examples.
 
 ## Features
 
