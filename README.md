@@ -26,7 +26,7 @@ The only thing required to use the directive is the config attribute.
 This is a factory object with all the settings unique to this widget.
 You will define the name of the widget, the events and any options you
 want to use as attributes here
-<div jquery-widget config="sliderConfig" ng-model="model.slider"></div>
+`<div jquery-widget config="sliderConfig" ng-model="model.slider"></div>`
 
 ```javascript
 register a slider module
