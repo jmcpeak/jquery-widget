@@ -81,6 +81,8 @@ this.binds = [
 this.render = function(viewValue, ngModel) {};
 ```
 
+Wiring up a method -
+
 ## Browser compatibility
 
 TBD
