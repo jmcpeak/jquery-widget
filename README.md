@@ -1,26 +1,28 @@
 # jquery-widget
 
-Have you written a jQuery Widget but you don't have time to re-write it in angular?
+Have you written a jQuery Widget but you don't have time to re-write the whole thing in angular?
 
-But - *wow* - how much knowledge it takes to *properly* wire up your widget in angular?
+Then you thought - I should be able to wrap it in an angular directive - right?
 
-How do I wrap it and use it angular? And it must have two-way binding enabled too...
+But - *wow* - it takes a lot of knowledge about the internals of angular to *properly* wrap your widget.
 
-With this directive all communication is using ngModel.
+There must be a generic directive to wrap a jQueryUI widget right? Well none that I could find - so I wrote jquery-widget.
 
-This Angular directive was written as a wrapper to host **any** Widget written to the specs of the
-[Widget Factory](http://api.jqueryui.com/jquery.widget/)
+With this general-purpose angular directive you should be able to wrap **any** jQuery UIWidget written to the specs of
+the [Widget Factory](http://api.jqueryui.com/jquery.widget/).
+
+Demos
 
 - slider [demo](http://plnkr.co/edit/9Pcn3q?p=preview)
 - spinner [demo](http://plnkr.co/edit/dXOXnI?p=preview)
 - progressbar [demo](http://plnkr.co/edit/hSDeSd?p=preview) 
 
-The [index.html](https://github.com/jmcpeak/jquery-widget/blob/master/app/index.html) file has many good working examples.
+The [index.html](https://github.com/jmcpeak/jquery-widget/blob/master/app/index.html) file has more working examples.
 
 ## Features
 
 - Should work with any jQuery Widget written to the jQuery Widget [Factory Pattern](http://api.jqueryui.com/jquery.widget/)
-- Written as a single general purpose directive - jqueryWidget.js
+- Written as a single general purpose directive - `<div jquery-widget="" config="yourFactoryHere">`
 - Just need to write and pass in a config factory object - see [slider.js](https://github.com/jmcpeak/jquery-widget/blob/master/app/scripts/controllers/slider.js)
 
 ## Settings in the config factory
