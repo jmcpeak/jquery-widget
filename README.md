@@ -92,7 +92,7 @@ Then all options will just be available on the model, by name, as two way bindin
 <input type="text" ng-model="model.foo.value">
 ```
 
-## Method
+## Methods
 A method can be used two ways - with and without a value.
 
 Without a value, it is just a string:
