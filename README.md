@@ -13,6 +13,7 @@ This Angular directive was written as a wrapper to host **any** Widget written t
 
 - slider [demo](http://plnkr.co/edit/9Pcn3q?p=preview)
 - spinner [demo](http://plnkr.co/edit/dXOXnI?p=preview)
+- progressbar [demo](http://plnkr.co/edit/hSDeSd?p=preview) 
 
 The [index.html](https://github.com/jmcpeak/jquery-widget/blob/master/app/index.html) file has many good working examples.
 
