@@ -4,15 +4,15 @@ Have you written a jQuery Widget but you don't have time to re-write it in angul
 
 But - *wow* - how much knowledge it takes to *properly* wire up your widget in angular?
 
-How do I wrap it and use it angular? And it must be a two-way binding!
+How do I wrap it and use it angular? And it must have two-way binding enabled too...
 
-With this directive - it is all in the model.
+With this directive all communication is using ngModel.
 
 This Angular directive was written as a wrapper to host **any** Widget written to the specs of the
 [Widget Factory](http://api.jqueryui.com/jquery.widget/)
 
-- slider [demo](http://jsfiddle.net/jmcpeak/scbu1w9f/)
-- spinner [demo](http://jsfiddle.net/jmcpeak/bqoyL56L/)
+- slider [demo](http://plnkr.co/edit/9Pcn3q?p=preview)
+- spinner [demo](http://plnkr.co/edit/dXOXnI?p=preview)
 
 The [index.html](https://github.com/jmcpeak/jquery-widget/blob/master/app/index.html) file has many good working examples.
 
