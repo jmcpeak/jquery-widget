@@ -11,7 +11,7 @@ There must be a generic directive to wrap a jQueryUI widget right? Well none tha
 With this general-purpose angular directive you should be able to wrap **any** jQuery UIWidget written to the specs of
 the [Widget Factory](http://api.jqueryui.com/jquery.widget/).
 
-# Demos
+## Demos
 
 Three standard widgets from jQueryUI - all use the same directive - just different factories to define them:
  
