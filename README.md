@@ -11,11 +11,13 @@ There must be a generic directive to wrap a jQueryUI widget right? Well none tha
 With this general-purpose angular directive you should be able to wrap **any** jQuery UIWidget written to the specs of
 the [Widget Factory](http://api.jqueryui.com/jquery.widget/).
 
-Demos
+# Demos
 
-- slider [demo](http://plnkr.co/edit/9Pcn3q?p=preview)
-- spinner [demo](http://plnkr.co/edit/dXOXnI?p=preview)
-- progressbar [demo](http://plnkr.co/edit/hSDeSd?p=preview) 
+Three standard widgets from jQueryUI - all use the same directive - just different factories to define them:
+ 
+- [slider](http://plnkr.co/edit/9Pcn3q?p=preview)
+- [spinner](http://plnkr.co/edit/dXOXnI?p=preview)
+- [progressbar](http://plnkr.co/edit/hSDeSd?p=preview) 
 
 The [index.html](https://github.com/jmcpeak/jquery-widget/blob/master/app/index.html) file has more working examples.
 
